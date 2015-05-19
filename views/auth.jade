@@ -1,0 +1,14 @@
+extends layout
+
+block content
+	div(id="auth")
+		:markdown
+			# WAIT UP!
+
+			You must authorize yourself with Shapeways in order to print a 3D model.
+
+			Once finshed, you'll be returned to the main page, where you'll need to click the "3D-PRINT" button again.
+
+	a(href="/auth/login")
+		div(id="authorize" class="hvr-float")
+			span(class="bigButton") AUTHORIZE @ SHAPEWAYS

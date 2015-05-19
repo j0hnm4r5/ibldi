@@ -1,0 +1,31 @@
+doctype html
+html
+	head
+		title= title
+		link(rel='stylesheet', href='/stylesheets/style.css')
+		link(rel='stylesheet', href='http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css')
+		link(rel='stylesheet', href='/stylesheets/hover.min.css')
+		link(rel='stylesheet', href='//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css')
+		link(rel='stylesheet', href='http://fonts.googleapis.com/css?family=Roboto:400,900,700,500,300')
+
+
+	body
+		block content
+
+		script(src='javascripts/three.js')
+
+		script(src='javascripts/three/controls/OrbitControls.js')
+
+		script(src='javascripts/three/loaders/OBJMTLLoader.js')
+		script(src='javascripts/three/loaders/DDSLoader.js')
+		script(src='javascripts/three/loaders/MTLLoader.js')
+
+		script(src='javascripts/three/exporters/OBJExporter.js')
+
+		script(src='https://maps.googleapis.com/maps/api/js?key=AIzaSyBidTp6L5xbPY3P-EpQ-PcNMgJWu2DpRwM')
+
+		script(src='http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js')
+		script(src='javascripts/leaflet-providers.js')
+		script(src='javascripts/map.js')
+
+		script(src='javascripts/script.js')

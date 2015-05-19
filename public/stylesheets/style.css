@@ -1,0 +1,224 @@
+html, body {
+	height: 100%;
+	width: 100%;
+	padding: 0px;
+	margin: 0px;
+	font: 1em 'Roboto', sans-serif;
+}
+
+
+
+a {
+	color: #00B7FF;
+}
+
+*:focus {
+    outline: 0;
+}
+
+::-webkit-input-placeholder {
+   color: #95DFFF;
+}
+
+#container {
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+
+#auth {
+	margin: 50px;
+}
+
+#logo {
+	padding: 30px;
+	margin: 0px;
+
+	position: absolute;
+	top: 0px;
+	left: 0px;
+}
+
+#bar, #submit {
+
+	margin: 30px;
+	padding: 5px;
+
+	top: 55px;
+
+	height: 20px;
+
+	position: absolute;
+
+	font-size: 1.1em;
+
+}
+
+#bar {
+	height: 20px;
+	width: 300px;
+
+	left: 100px;
+
+	background-color: #4FC9FF;
+	border: 2px solid white;
+
+	color: white;
+}
+
+#submit {
+
+	width: 40px;
+	height: 34px;
+
+	left: 400px;
+	/*top: -32px;*/
+
+	background-color: #4FC9FF;
+	border: 2px solid white;
+
+	text-align: center;
+	color: white;
+
+}
+
+#submit:hover {
+	background-color: white;
+	border: 2px solid #4FC9FF;
+	color: #4FC9FF;
+}
+
+#map {
+	height: 100%;
+	width: 100%;
+	padding: 0px;
+	margin: 0px;
+
+	position: absolute;
+	top: 0px;
+	left: 0px;
+}
+
+#viewer {
+	width: 500px;
+	height: 800px;
+	position: absolute;
+	right: 0px;
+	bottom: 0px;
+
+	pointer-events: none;
+}
+
+#send {
+	margin: 50px 60px;
+	padding: 10px;
+	width: 380px;
+	height: 30px;
+	position: absolute;
+	right: 0px;
+	bottom: 0px;
+
+	text-align: center;
+
+	background-color: #4FC9FF;
+	opacity: .8;
+
+	cursor: pointer;
+
+	border: 2px solid white;
+}
+
+#authorize {
+	margin: 10px 50px;
+	padding: 10px;
+	width: 380px;
+	height: 30px;
+
+	text-align: center;
+
+	background-color: #4FC9FF;
+	opacity: .8;
+}
+
+.bigButton {
+	color: #ffffff;
+	font-size: 1.8em;
+	font-weight: 700;
+}
+
+.leaflet-tile {
+	border: 2px dashed white;
+	box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+	opacity: .4 !important;
+}
+
+.leaflet-tile:hover {
+	border: 2px solid #4FC9FF;
+	opacity: 1 !important;
+	
+}
+
+#wash {
+
+	/*display: none;*/
+
+	position:absolute;
+	width: 100%;
+	height: 100%;
+	background-color: #4FC9FF;
+	opacity: .5;
+}
+
+#uploading, #welcome {
+
+	display: none;
+
+	background-color: #4FC9FF;
+	border: 2px solid white;
+
+	position:absolute;
+
+	width: 600px;
+	height: 200px;
+
+	left: 50%;
+	margin-left: -300px;
+
+	margin-top: 250px;
+
+	padding: 20px;
+
+	color: white;
+	text-align: center;
+	line-height: 0em;
+}
+
+#welcome {
+	display: inline;
+	position:absolute;
+	margin-top: 175px;
+	height: 500px;
+
+	line-height: 1em;
+}
+
+#quotes {
+	font-size: 1.2em;
+	line-height: 4em;
+}
+
+#explore {
+	background-color: white;
+	color: #4FC9FF;
+	width: 40%;
+	padding: 20px;
+
+	margin-left: auto;
+	margin-right: auto;
+
+	cursor: pointer;
+}
+
+/*$(".leaflet-control-zoom").css("visibility", "hidden");*/

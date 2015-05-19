@@ -1,0 +1,34 @@
+extends layout
+
+block content
+	div(id="container")
+		div(id="map")
+		div(id="viewer")
+		div(id="logo" class="hvr-grow-rotate")
+			img(src="images/ibldi-logo-blue.png" width="80px")
+		div(id="search")
+			form(action="javascript:recenter()")
+				input(id="bar" class="hvr-border-fade" type="text" placeholder="enter NYC landmark or address")
+				input(id="submit" class="hvr-grow-rotate" type="submit" value="go!")
+		div(id="send" class="hvr-bubble-float-top" onclick="exportVRML(activeMergedMesh, activeCompleteMesh, activeFilename)")
+			span(class="bigButton") 3D-PRINT THIS MODEL
+
+		div(id="wash")
+		
+		div(id="uploading")
+			h1 GETTING READY TO PRINT
+			span(id="quotes") Uploading to Shapeways
+			br
+			i(class="fa fa-cube fa-spin fa-5x")
+			i(class="fa fa-cube fa-spin fa-3x" style="-webkit-animation-direction: reverse; -moz-animation-direction: reverse; -o-animation-direction: reverse; animation-direction: reverse;")
+			i(class="fa fa-cube fa-spin fa-4x")
+
+		div(id="welcome")
+			h1 PRINT A SECTION OF NYC
+			p ibldi is a web app that creates customizable 3D printed models of urban areas.
+			iframe(width="380" height="214" src="https://www.youtube.com/embed/RkC58fW_XNg?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen)
+			p Type in an address or landmark, or just explore on your own. Click on different tiles to preview them, and when you're ready to print it, press the big blue button.
+			p Please be advised that ibldi is a PROTOTYPE. A working prototype, but a prototype nonetheless. There are bound to be bugs, and many of the map tiles are not printable, so be sure the generated product looks complete before purchasing it.
+			div(id="explore" class="hvr-pop" onclick="hideWelcome()")
+				span LET ME EXPLORE!
+
